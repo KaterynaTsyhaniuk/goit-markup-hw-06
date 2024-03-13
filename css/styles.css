@@ -1033,14 +1033,14 @@ section {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 768) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-third-text {
     text-align: start;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 16px;
   }
 }
@@ -1255,6 +1255,8 @@ section {
 }
 
 .review-form-name-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -1374,11 +1376,22 @@ section {
 
 @media screen and (max-width: 767px) {
   .link-box {
-    display: flex;
     flex-direction: column;
   }
 
   .review-form-chackbox-label {
+    align-items: center;
     display: flex;
+  }
+
+  .modal-window {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .review-form-chackbox-label {
+    display: flex;
+    align-items: center;
   }
 }
