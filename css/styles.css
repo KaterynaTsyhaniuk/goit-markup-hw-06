@@ -127,7 +127,7 @@ input {
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .is-open {
+  .mobile-menu.is-open {
     visibility: visible;
     opacity: 1;
   }
@@ -138,7 +138,7 @@ input {
   .mobile-menu-btn-close {
     position: absolute;
     top: 24px;
-    right: 0px;
+    right: 24px;
     width: 24px;
     height: 24px;
     display: flex;
@@ -1370,4 +1370,15 @@ section {
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: #404bbf;
+}
+
+@media screen and (max-width: 767px) {
+  .link-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-form-chackbox-label {
+    display: flex;
+  }
 }
